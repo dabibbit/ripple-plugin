@@ -1,11 +1,14 @@
 //const rippleRest = require('ripple-rest');
+const express = require('express');
 
-function RippleSimplePlugin(gatewayd) {
-  this.gatewayd = gatewayd;
-  //var router = new express.Router() 
-  //gatewayd.server.use('/ripple-simple', rippleRest.router);
-  gatewayd.processes.add('./node_modules/gatewayd-ripple-simple/processes/outgoing.js');
-  gatewayd.processes.add('./node_modules/gatewayd-ripple-simple/processes/incoming.js');
+function RippleSimplePlugin(options) {
+  var options = options || {};
+  this.gatewayd = options.gatewayd;
+  this.router = new express.Router();
+  this.processes = [
+    __dirname+'/processes/outgoing.js',
+    __dirname+'/processes/incoming.js'
+  ];
 }
 
 module.exports = RippleSimplePlugin;
