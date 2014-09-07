@@ -1,0 +1,22 @@
+{
+  "name": "ripple-simple-plugin",
+  "version": "0.1.0",
+  "description": "Gatewayd plugin to process Ripple transactions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gatewayd/ripple-simple-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gatewayd/ripple-simple-plugin/issues"
+  },
+  "homepage": "https://github.com/gatewayd/ripple-simple-plugin",
+  "dependencies": {
+    "ripple-account-monitor": "2.0.0"
+  }
+}
