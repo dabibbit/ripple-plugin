@@ -27,12 +27,12 @@ Include the plugin in your gatewayd application using NPM:
   The file in `outgoing.js` runs a daemon process that monitors the Transactions table for
 outgoing ripple transactions, and sends them to the Ripple network.
 
-    gatewayd.processes.add('./node_modules/gatewayd-ripple-plugin/processes/outgoing.js');
+    gatewayd.processes.add('./node_modules/gatewayd-ripple-plugin/processes/ripple-outgoing.js');
 
   The file in `incoming.js` runs a daemon process that monitors the Ripple network for
 Transactions made to a ripple Address, and records them in the gatewayd database.
 
-    gatewayd.processes.add('./node_modules/gatewayd-ripple-plugin/processes/outgoing.js');
+    gatewayd.processes.add('./node_modules/gatewayd-ripple-plugin/processes/ripple-incoming.js');
 
 ### Routes
 

@@ -7,8 +7,8 @@ function RippleSimplePlugin(options) {
   this.gatewayd = options.gatewayd;
   this.router = rippleRest.router;
   this.processes = [
-    __dirname+'/processes/outgoing.js',
-    __dirname+'/processes/incoming.js'
+    __dirname+'/processes/ripple-outgoing.js',
+    __dirname+'/processes/ripple-incoming.js'
   ];
 }
 

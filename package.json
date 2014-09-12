@@ -23,7 +23,7 @@
     "ripple-rest-client": "^1.10.1",
     "sql-mq-worker": "^1.0.3",
     "node-uuid": "^1.4.1",
-    "ripple-rest": "git://github.com/ripple/ripple-rest.git#96ae3461f9a679c5a6f0de6912ec2e00bcc6f449",
+    "ripple-rest": "^1.2.2",
     "express": "^4.8.8"
   }
 }
